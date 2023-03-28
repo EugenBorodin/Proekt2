@@ -16,6 +16,6 @@ public class CarMain {
     String gear = br.readLine();
   }
 }
- // Тип двигателя
+// Тип двигателя
 // Цвет
 // Коробка передач
