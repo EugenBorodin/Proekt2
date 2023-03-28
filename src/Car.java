@@ -1,3 +1,4 @@
 public class Car {
-  System
+  private String model;
+  private String color;
 }
