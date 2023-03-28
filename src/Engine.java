@@ -1,27 +1,11 @@
-public class Engine {
-  String diesel;
-  String gasoline;
+public enum Engine {
+  DIESEL("дизель"),
+  GASOLINE("бензин");
 
-  public String getDiesel() {
-    return diesel;
-  }
+  private final String Type;
 
-  public String getGasoline() {
-    return gasoline;
-  }
-
-  public void setDiesel(String diesel) {
-    this.diesel = diesel;
-  }
-
-  public void setGasoline(String gasoline) {
-    this.gasoline = gasoline;
-  }
-
-  public Engine(String diesel, String gasoline) {
-    this.diesel = diesel;
-    this.gasoline = gasoline;
-
-
+  private Engine(String Type) {
+    this.Type = Type;
   }
 }
+
