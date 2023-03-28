@@ -1,10 +1,10 @@
 public enum Color {
-  RED("Red"),
-  BLUE("Blue"),
-  GREEN("Green"),
-  YELLOW("Yellow"),
-  BLACK("Black"),
-  WHITE("White");
+  RED("Красный"),
+  BLUE("Синий"),
+  GREEN("Зеленый"),
+  YELLOW("Желтый"),
+  BLACK("Черный");
+
 
   private final String name;
 
