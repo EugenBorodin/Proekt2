@@ -10,7 +10,7 @@ public class CarMain {
     Car car = new Car(30000);
     while (car.getColor() == null) {
       try {
-        System.out.println("Выберите цвет вашей новой машины (RED/WHITE/GREEN/YELLOW/BLACK/BLUE): ");
+        System.out.println("Выберите цвет вашей новой машины (Красный/Белый/Синий/Зеленый/Желтый/Черный): ");
         car.setColor(Color.valueOf(br.readLine().toUpperCase()));
       } catch (IllegalArgumentException e) {
         System.out.println("Такого цвета нет на складе, введите другой цвет: " + e.getMessage());
