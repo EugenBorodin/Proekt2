@@ -18,15 +18,21 @@ public class Car {
   public Color getColor() {
     return color;
   }
-  public void setPrice(Integer price){
+
+  public void setPrice(Integer price) {
     this.price = price;
   }
-  public Integer getPrice(){
+
+  public Integer getPrice() {
     return price;
   }
+
   public void printCar(){
-    if(color!=null){
+    if (color != null)
       System.out.println("Цвет вашей машины: " + color.colorName);
+  }
+    public Integer finalPrice(){
+      return price + color.colorPrice;
     }
   }
-}
+
