@@ -5,7 +5,6 @@ public class Car {
   private Gear gear;
   private Interior interior;
 
-  private Interior price;
 
   public CarModel getModel() {
     return model;
@@ -50,9 +49,6 @@ public class Car {
     this.interior = interior;
   }
 
-  public void setPrice(Interior price) {
-    this.price = price;
-  }
 
   public void printCar(){
     if (model != null){

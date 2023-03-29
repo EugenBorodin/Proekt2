@@ -5,7 +5,7 @@ public enum Engine {
   public final String engineType;
   public final Integer enginePrise;
 
-  private Engine(String engineType, Integer enginePrise) {
+  Engine(String engineType, Integer enginePrise) {
     this.engineType = engineType;
     this.enginePrise = enginePrise;
   }

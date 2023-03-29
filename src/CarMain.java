@@ -6,6 +6,7 @@ import java.time.LocalDate;
 public class CarMain {
   public static void main(String[] args) throws IOException {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    System.out.println("ДОБРО ПОЖАЛОВАТЬ В АВТОСАЛОН ===ТРИ ТОВАРИЩА===");
 
     Car car = new Car();
     while (car.getModel() == null) {

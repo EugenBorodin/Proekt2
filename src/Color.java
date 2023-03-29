@@ -8,7 +8,7 @@ public enum Color {
   public final Integer colorPrice;
 
 
-  private Color(String colorName, Integer colorPrice) {
+  Color(String colorName, Integer colorPrice) {
     this.colorName = colorName;
     this.colorPrice = colorPrice;
   }

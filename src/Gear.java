@@ -5,7 +5,7 @@ public enum Gear {
   public final String gearType;
   public final Integer gearPrice;
 
-  private Gear(String gearType, Integer gearPrice) {
+  Gear(String gearType, Integer gearPrice) {
     this.gearType = gearType;
     this.gearPrice = gearPrice;
   }
