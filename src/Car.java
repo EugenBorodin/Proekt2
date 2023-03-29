@@ -69,12 +69,13 @@ public class Car {
     }
 
     if(interior != null){
-      System.out.println("interier" + interior.interiorPrice);
+      System.out.println("Салон Автомобиля:" + interior.interiorName);
     }
 
   }
     public Integer finalPrice(){
-      return color.colorPrice + engine.enginePrise;
+      return model.carPrice + color.colorPrice + engine.enginePrise + gear.gearPrice
+          + interior.interiorPrice;
     }
   }
 

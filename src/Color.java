@@ -1,10 +1,7 @@
 public enum Color {
-  RED("Красный", 1000),
+  RED("Красный", 600),
   WHITE("Белый", 500),
-  BLUE("Синий", 1100),
-  GREEN("Зеленый", 1150),
-  YELLOW("Желтый", 900),
-  BLACK("Черный", 1500);
+  BLACK("Черный", 990);
 
 
   public final String colorName;

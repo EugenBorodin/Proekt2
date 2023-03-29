@@ -1,8 +1,8 @@
 public enum CarModel {
-  GLE("Mercedes", 60000),
-  GLS("Mercedes", 100000),
-  GLA("Mercedes",35000),
-  GLC("Mercedes",45000);
+  BMW3("BMW-M3", 70000),
+  BMW5("BMW-M5", 80000),
+  BMW7("BMW-7ALPINA",90000);
+
 
   public final String carName;
   public final Integer carPrice;

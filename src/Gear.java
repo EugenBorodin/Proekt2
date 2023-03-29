@@ -1,6 +1,6 @@
 public enum Gear {
-  AUTO("автомат", 9000),
-  MANUAL("механика", 5000);
+  AUTO("АККП", 9000),
+  MANUAL("МКП", 5000);
 
   public final String gearType;
   public final Integer gearPrice;
