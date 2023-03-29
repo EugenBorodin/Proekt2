@@ -45,11 +45,17 @@ public class Car {
   }
 
   public void printCar(){
-    if (color != null)
+    if (color != null){
       System.out.println("Цвет вашей машины: " + color.colorName);
+    }
+    if(engine != null) {
+      System.out.println("Двигатель: " + engine.engineType);
+    }
+    if(gear!=null) System.out.println("Коробка передач: " + gear.gearType);
+
   }
     public Integer finalPrice(){
-      return price + color.colorPrice;
+      return price + color.colorPrice + engine.enginePrise;
     }
   }
 

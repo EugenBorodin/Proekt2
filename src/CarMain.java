@@ -16,10 +16,18 @@ public class CarMain {
         System.out.println("Такого цвета нет на складе, введите другой цвет: " + e.getMessage());
       }
     }
-    car.printCar();
-    System.out.println("Стоимость выбранной вами комплектации = " + car.finalPrice());
+    while (car.getEngine() == null) {
+      try {
+        System.out.println("Выберете тип двигателя (DIESEL / GASOLINE): ");
+        car.setEngine(Engine.valueOf(br.readLine().toUpperCase()));
+      } catch (IllegalArgumentException e) {
+        System.out.println("Введите тип двигателя как указано в примере!!! (DIESEL / GASOLINE)" + e.getMessage());
+      }
+      car.printCar();
+      System.out.println("Стоимость выбранной вами комплектации = " + car.finalPrice());
 
-    LocalDate date = LocalDate.now();
-    System.out.println("Сегодня: " + date);
+      LocalDate date = LocalDate.now();
+      System.out.println("Сегодня: " + date);
+    }
   }
 }

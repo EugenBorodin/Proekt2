@@ -7,7 +7,7 @@ public enum Interieur {
   public final Integer interieurPrice;
 
   private Interieur(String interieurName,Integer interieurPrice){
-    this interieurName = interieurName;
-    this interieurPrice = interieurPrice;
+    this.interieurName = interieurName;
+    this.interieurPrice = interieurPrice;
   }
 }
