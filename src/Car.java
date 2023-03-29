@@ -3,7 +3,7 @@ public class Car {
   private Color color;
   private Engine engine;
   private Gear gear;
-  private Integer interior;
+  private Interior interior;
 
   private Interior price;
 
@@ -42,24 +42,16 @@ public class Car {
     return gear;
   }
 
-  public Integer getInterior() {
+  public Interior getInterior() {
     return interior;
   }
 
-  public void setInterior(Integer interior) {
+  public void setInterior(Interior interior) {
     this.interior = interior;
   }
 
   public void setPrice(Interior price) {
     this.price = price;
-  }
-
-  public void setPrice(Integer price) {
-    this.price = price;
-  }
-
-  public Integer getPrice() {
-    return price;
   }
 
   public void printCar(){
@@ -77,12 +69,12 @@ public class Car {
     }
 
     if(interior != null){
-      System.out.println("interier" + interior.int);
+      System.out.println("interier" + interior.interiorPrice);
     }
 
   }
     public Integer finalPrice(){
-      return price + color.colorPrice + engine.enginePrise;
+      return color.colorPrice + engine.enginePrise;
     }
   }
 
