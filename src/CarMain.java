@@ -7,10 +7,10 @@ public class CarMain {
   public static void main(String[] args) throws IOException {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-    Car car = new Car(30000);
+    Car car = new Car();
     while (car.getColor() == null) {
       try {
-        System.out.println("Выберите цвет вашей новой машины (RED/WHITE/BLUE/GREEN/YELLOW/BLACK): ");
+        System.out.println("Выберите цвет вашей новой машины (Красный/Белый/Синий/Зеленый/Желтый/Черный): ");
         car.setColor(Color.valueOf(br.readLine().toUpperCase()));
       } catch (IllegalArgumentException e) {
         System.out.println("Такого цвета нет на складе, введите другой цвет: " + e.getMessage());

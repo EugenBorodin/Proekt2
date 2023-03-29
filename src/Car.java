@@ -1,15 +1,19 @@
 public class Car {
+  private CarModel model;
   private Color color;
   private Engine engine;
   private Gear gear;
   private Integer price;
 
-  public Car() {
+  public CarModel getModel() {
+    return model;
   }
 
+  public void setModel(CarModel model) {
+    this.model = model;
+  }
 
-  public Car(Integer price) {
-    this.price = price;
+  public Car() {
   }
 
   public void setColor(Color color) {
@@ -45,6 +49,9 @@ public class Car {
   }
 
   public void printCar(){
+    if (model != null){
+      System.out.println("Модель вашей машины: " + model.carName);
+    }
     if (color != null){
       System.out.println("Цвет вашей машины: " + color.colorName);
     }
