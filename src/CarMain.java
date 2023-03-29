@@ -27,7 +27,7 @@ public class CarMain {
       System.out.println("Стоимость выбранной вами комплектации = " + car.finalPrice());
 
       LocalDate date = LocalDate.now();
-      System.out.println("Сегодня: " + date);
+      System.out.println("Вы купили автомобиль " + date);
     }
   }
 }
