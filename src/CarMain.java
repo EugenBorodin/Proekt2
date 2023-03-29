@@ -12,7 +12,7 @@ public class CarMain {
         System.out.println("Выберите цвет вашей новой машины (RED/WHITE/GREEN/YELLOW/BLACK/BLUE): ");
         car.setColor(Color.valueOf(br.readLine()));
       } catch (IllegalArgumentException e) {
-        System.out.println("Такого цвета нет на складе, введите другой цвет: ");
+        System.out.println("Такого цвета нет на складе, введите другой цвет: " + e.getMessage());
       }
     }
     car.printCar();
