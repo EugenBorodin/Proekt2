@@ -55,7 +55,7 @@ public class Car {
 
   }
     public Integer finalPrice(){
-      return price + color.colorPrice;
+      return price + color.colorPrice + engine.enginePrise;
     }
   }
 
