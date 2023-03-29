@@ -7,6 +7,7 @@ public class Car {
   public Car() {
   }
 
+
   public Car(Integer price) {
     this.price = price;
   }
@@ -17,6 +18,22 @@ public class Car {
 
   public Color getColor() {
     return color;
+  }
+
+  public void setEngine(Engine engine) {
+    this.engine = engine;
+  }
+
+  public Engine getEngine() {
+    return engine;
+  }
+
+  public void setGear(Gear gear) {
+    this.gear = gear;
+  }
+
+  public Gear getGear() {
+    return gear;
   }
 
   public void setPrice(Integer price) {
