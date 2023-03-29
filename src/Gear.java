@@ -1,10 +1,12 @@
 public enum Gear {
-  AUTO("автомат"),
-  MANUAL("механика");
+  AUTO("автомат", 9000),
+  MANUAL("механика", 5000);
 
-  private final String typeGear;
+  public final String gearType;
+  public final Integer gearPrice;
 
-  private Gear(String typeGear) {
-    this.typeGear = typeGear;
+  private Gear(String gearType, Integer gearPrice) {
+    this.gearType = gearType;
+    this.gearPrice = gearPrice;
   }
 }
