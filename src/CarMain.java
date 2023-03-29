@@ -11,13 +11,14 @@ public class CarMain {
     while (car.getColor() == null) {
       try {
         System.out.println("Выберите цвет вашей новой машины (RED/WHITE/GREEN/YELLOW/BLACK/BLUE): ");
-        car.setColor(Color.valueOf(br.readLine()));
+        car.setColor(Color.valueOf(br.readLine().toUpperCase()));
       } catch (IllegalArgumentException e) {
         System.out.println("Такого цвета нет на складе, введите другой цвет: ");
       }
     }
     car.printCar();
     System.out.println("Стоимость выбранной вами комплектации = " + car.finalPrice());
+
     LocalDate date = LocalDate.now();
     System.out.println("Сегодня: " + date);
   }
