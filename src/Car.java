@@ -3,7 +3,9 @@ public class Car {
   private Color color;
   private Engine engine;
   private Gear gear;
-  private Integer price;
+  private Integer interior;
+
+  private Interior price;
 
   public CarModel getModel() {
     return model;
@@ -40,6 +42,18 @@ public class Car {
     return gear;
   }
 
+  public Integer getInterior() {
+    return interior;
+  }
+
+  public void setInterior(Integer interior) {
+    this.interior = interior;
+  }
+
+  public void setPrice(Interior price) {
+    this.price = price;
+  }
+
   public void setPrice(Integer price) {
     this.price = price;
   }
@@ -58,7 +72,13 @@ public class Car {
     if(engine != null) {
       System.out.println("Двигатель: " + engine.engineType);
     }
-    if(gear!=null) System.out.println("Коробка передач: " + gear.gearType);
+    if(gear !=null) {
+      System.out.println("Коробка передач: " + gear.gearType);
+    }
+
+    if(interior != null){
+      System.out.println("interier" + interior.int);
+    }
 
   }
     public Integer finalPrice(){
