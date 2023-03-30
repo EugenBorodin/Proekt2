@@ -67,8 +67,13 @@ public class CarMain {
       }else {
         System.out.println("Введите адрес EMAIL мы отправим Вам счет на оплату:");
       }
-      String email = br.readLine();
 
+      String email = br.readLine();
+      if (!email.contains("@")) {
+        throw new InvalidEmail(email);
+      }else {
+        System.out.println("Счет на оплату был выслан на: "  + email);
+      }
       LocalDate date = LocalDate.now();
       System.out.println("Поздравляем Вас вы заказали лучший автомобиль в нашем городе " + date);
     }
