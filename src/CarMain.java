@@ -10,7 +10,7 @@ public class CarMain {
 
     Car car = Car.readCar();
     car.printCar();
-    System.out.println("Стоимость выбранной вами комплектации = " + car.finalPrice() + " €");
+    System.out.println("Стоимость выбранной вами комплектации == " + car.finalPrice() + " €");
 
 
     System.out.printf("Выберете способ оплаты:%nНаличный расчет в нашем офисе -- Выберете: 1%n" +
