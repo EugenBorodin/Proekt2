@@ -3,7 +3,7 @@
 
     public InvalidEmail(String email) {
 
-      super("Некорректный e-mail: " + email);
+      super("Некорректный E-MAIL: " + email);
     }
   }
 
