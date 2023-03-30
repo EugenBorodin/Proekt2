@@ -61,21 +61,25 @@ public class CarMain {
 
       System.out.printf("Выберете способ оплаты:%nНаличный расчет в нашем офисе -- Выберете: 1%n" +
           "Безналичный расчет -- Выберете: 2%n");
-      int payment = Integer.parseInt(br.readLine());
-      if (payment == 1){
-        System.out.println("Будем рады вас видеть у нас в офисе в любой удобный для вас день");
-      }else {
-        System.out.println("Введите адрес EMAIL мы отправим Вам счет на оплату:");
-      }
+      try {
+        int payment = Integer.parseInt(br.readLine());
+        if (payment == 1) {
+          System.out.println("Будем рады вас видеть у нас в офисе в любой удобный для вас день");
+        } else {
+          System.out.println("Введите адрес EMAIL мы отправим Вам счет на оплату:");
+        }
 
-      String email = br.readLine();
-      if (!email.contains("@")) {
-        throw new InvalidEmail(email);
-      }else {
-        System.out.println("Счет на оплату был выслан на: "  + email);
+        String email = br.readLine();
+        if (!email.contains("@")) {
+          throw new InvalidEmail(email);
+        } else {
+          System.out.println("Счет на оплату был выслан на: " + email);
+        }
+        LocalDate date = LocalDate.now();
+        System.out.println("Поздравляем Вас вы заказали лучший автомобиль в нашем городе " + date);
+      } catch (NumberFormatException e) {
+        System.err.println("Некорректный ввод " + e.getMessage());
       }
-      LocalDate date = LocalDate.now();
-      System.out.println("Поздравляем Вас вы заказали лучший автомобиль в нашем городе " + date);
     }
   }
 }
