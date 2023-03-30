@@ -24,11 +24,12 @@ public class CarMain {
       }
 
       String email = br.readLine();
-      if (!email.contains("@")) {
-        throw new InvalidEmail(email);
-      } else {
-        System.out.println("Счет на оплату был выслан на: " + email);
+      while (!email.contains("@")) {
+        //throw new InvalidEmail(email);
+        System.out.println("Введите корректный EMAIL: ");
       }
+      System.out.println("Счет на оплату был выслан на: " + email);
+
       LocalDate date = LocalDate.now();
       System.out.println("Поздравляем Вас вы заказали лучший автомобиль в нашем городе " + date);
     } catch (NumberFormatException e) {
