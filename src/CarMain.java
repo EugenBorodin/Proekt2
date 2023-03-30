@@ -19,8 +19,11 @@ public class CarMain {
       int payment = Integer.parseInt(br.readLine());
       if (payment == 1) {
         System.out.println("Будем рады вас видеть у нас в офисе в любой удобный для вас день");
-      } else {
+      } if (payment == 2) {
         System.out.println("Введите адрес EMAIL мы отправим Вам счет на оплату:");
+      } else {
+        System.out.println("Вы ввели некорректное число!");
+        return;
       }
 
       String email = br.readLine();
