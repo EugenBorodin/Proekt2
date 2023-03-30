@@ -124,7 +124,7 @@ public class Car {
               "TEXTILE-500€%n");
           car.setInterior(Interior.valueOf(br.readLine().toUpperCase()));
         } catch (IllegalArgumentException e) {
-          System.out.println("Такой коробки передач нет в нашем салоне: " + e.getMessage());
+          System.out.println("Такой коробки передач нет в нашем салоне:: " + e.getMessage());
         }
       }
     }
