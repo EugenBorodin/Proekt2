@@ -1,21 +1,18 @@
-import javax.lang.model.element.Name;
-import java.util.HashMap;
-
 public class Person {
-  private String name;
+  private final String name;
 
-  private String address;
+  private final String phone;
 
 
-  public Person(String name,String address){
+  public Person(String name,String phone){
     this.name = name;
-    this.address = address;
+    this.phone = phone;
   }
 
   public String getName() {
     return name;
   }
-  public String getAddress() {
-    return address;
+  public String getPhone() {
+    return phone;
   }
 }

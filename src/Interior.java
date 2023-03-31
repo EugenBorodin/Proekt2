@@ -1,5 +1,5 @@
 public enum Interior {
-  LEATHER("Кожа",1000),
+  LEATHER("Кожаный",1000),
   ALCANTARA ("Алькантара", 1400),
   TEXTILE ("Текстиль",500);
 

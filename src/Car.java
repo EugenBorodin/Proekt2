@@ -88,7 +88,7 @@ public class Car {
             "BMW7-90000€%n");
         car.setModel(CarModel.valueOf(br.readLine().toUpperCase()));
       } catch (IllegalArgumentException e) {
-        System.out.println("Такого автомобиля нет в нашем салоне: " + e.getMessage());
+        System.err.println("Такого автомобиля нет в нашем салоне: " + e.getMessage());
       }
     }
 
@@ -97,7 +97,7 @@ public class Car {
         System.out.printf("Выберите цвет вашей новой машины:%nRED-600€%nWHITE-500€%nBLACK-990€%n");
         car.setColor(Color.valueOf(br.readLine().toUpperCase()));
       } catch (IllegalArgumentException e) {
-        System.out.println("Такого цвета нет на складе, введите другой цвет: " + e.getMessage());
+        System.err.println("Такого цвета нет на складе, введите другой цвет: " + e.getMessage());
       }
     }
 
@@ -106,7 +106,7 @@ public class Car {
         System.out.printf("Выберете тип двигателя:%nDIESEL-10000€%nGASOLINE-12000%n");
         car.setEngine(Engine.valueOf(br.readLine().toUpperCase()));
       } catch (IllegalArgumentException e) {
-        System.out.println("Введите тип двигателя как указано в примере!!!" +
+        System.err.println("Введите тип двигателя как указано в примере!!!" +
             " (DIESEL / GASOLINE)" + e.getMessage());
       }
 
