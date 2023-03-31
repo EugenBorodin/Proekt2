@@ -1,7 +1,7 @@
 public enum CarModel {
   BMW3("BMW-M3", 70000),
   BMW5("BMW-M5", 80000),
-  BMW7("BMW-7ALPINA",90000);
+  BMW7("BMW-7ALPINE",90000);
 
 
   public final String carName;
